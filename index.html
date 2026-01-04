@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinod Patil | Backend Engineer</title>
+    <link rel="stylesheet" href="style_2.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    
+    <nav>
+        <a href="#" class="brand" onclick="loadPage('about')">Vinod Patil</a>
+        <div>
+            <a onclick="loadPage('about')" id="nav-about">About</a>
+            <a onclick="loadPage('projects')" id="nav-projects">Projects</a>
+            <a onclick="loadPage('blogs')" id="nav-blogs">Writing</a>
+            <a href="https://linkedin.com/in/vinod-a-patil/" target="_blank">LinkedIn</a>
+        </div>
+    </nav>
+
+    <div id="terminal-wrapper" onclick="activateTerminal()">
+        <div class="terminal-header">
+            <div class="dot red"></div>
+            <div class="dot yellow"></div>
+            <div class="dot green"></div>
+        </div>
+        <div id="terminal-output">
+            <div><span class="success">✔ System Online.</span></div>
+            <div><span class="keyword">visitor@vinod:~$</span> cat current_stats.json</div>
+            <!-- <div style="margin-bottom: 0px;margin-top: 0%;"> -->
+                <div>{</div> 
+                    <div>  <span class="highlight">"contributing_on"</span>: "Agentic Commerce",</div> 
+                    <div>  <span class="highlight">"technology"</span>: "Multi-Agentic Orchestrators"</div>
+                <div>}</div>
+            <!-- </div> -->
+        </div>
+        
+        <div class="input-line">
+            <span class="prompt">visitor@vinod:~$</span>
+            <span id="ghost-input"></span>
+            <input type="text" id="commandInput" autocomplete="off">
+        </div>
+    </div>
+
+    <div id="content-area"></div>
+
+    <footer style="text-align:center; color:#444; font-size:0.8rem; margin-top:80px;">
+        &copy; 2025 Vinod Patil.
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
